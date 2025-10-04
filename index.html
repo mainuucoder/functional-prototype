@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub - Mini E-Learning Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="website icon" href="./img/web-icon.avif">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo fade-in">
+                    <i class="fas fa-graduation-cap"></i>
+                    <a href="#"><span>LearnHub</span></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="nav-link active fade-in" data-target="courses-section">Courses</a></li>
+                        <li><a href="#" class="nav-link fade-in" data-target="dashboard-section">My Learning</a></li>
+                        <li><a href="about-us.html" >About-Us</a></li>
+                     
+                    </ul>
+                </nav>
+                <div class="user-actions fade-in">
+                    <span id="user-greeting">Hello, Guest!</span>
+                    <button class="btn btn-outline" id="login-btn">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="typewriter">Expand Your Knowledge, Anytime, Anywhere</h1>
+            <p class="fade-in">Discover courses in tech, business, and creative arts. 
+                Learn at your own pace with expert instructors.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Courses Section -->
+        <section id="courses-section">
+            <div class="section-title">
+                <h2 class="slide-in-left">Featured Courses</h2>
+            </div>
+
+            <div class="course-grid" id="course-container">
+                <!-- Courses will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Course Detail Section -->
+        <section id="course-detail-section" class="course-detail">
+            <!-- Course details will be populated by JavaScript -->
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard-section" class="dashboard">
+            <div class="dashboard-header">
+                <h2 class="slide-in-left">My Learning Dashboard</h2>
+                <p class="fade-in">Continue your learning journey</p>
+            </div>
+            <div class="dashboard-courses" id="dashboard-courses">
+                <!-- Enrolled courses will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Sign In</h2>
+            </div>
+            <form id="auth-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-options">
+                    <label>
+                        <input type="checkbox" id="remember"> Remember me
+                    </label>
+                    <a href="#" id="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In</button>
+            </form>
+            <div class="form-switch">
+                Don't have an account? <a href="#" id="switch-to-signup">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column fade-in">
+                    <h3>LearnHub</h3>
+                    <p>Empowering learners worldwide with accessible, high-quality education.</p>
+                </div>
+                <div class="footer-column fade-in">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                     
+                       
+                    </ul>
+                </div>
+                <div class="footer-column fade-in">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column fade-in">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li><a href="https://web.facebook.com/profile.php?id=100020363260322" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                       <li><a href="https://github.com/mainuucoder" target="_blank"><i class="fab fa-github"></i> Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/daniel-mutahi-5952ba298" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; MAINUU-2025 LearnHub. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+   <script src="./index.js"></script>
+</body>
+</html>
